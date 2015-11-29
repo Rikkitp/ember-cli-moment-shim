@@ -32,11 +32,11 @@ module.exports = {
     var options = this.momentOptions;
 
     if (options.includeTimezone) {
-      app.import(vendor + '/moment-timezone/tz.js', { prepend: true });
+      app.import(vendor + '/moment-timezone/moment-timezone.js', { prepend: true });
     }
 
     if (typeof options.includeLocales === 'boolean' && options.includeLocales) {
-      app.import(vendor + '/moment/min/moment-with-locales.min.js', { prepend: true });
+      app.import(vendor + '/moment/min/moment-with-locales.js', { prepend: true });
     }
     else {
       if (Array.isArray(options.includeLocales)) {
@@ -45,7 +45,7 @@ module.exports = {
         });
       }
 
-      app.import(vendor + '/moment/min/moment.min.js', { prepend: true });
+      app.import(vendor + '/moment/moment.js', { prepend: true });
     }
   },
 
