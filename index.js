@@ -52,7 +52,7 @@ module.exports = {
 
   getConfig: function() {
     var projectConfig = ((this.project.config(process.env.EMBER_ENV) || {}).moment || {});
-    var momentPath = path.dirname(require.resolve('moment'));
+    var momentPath = this.project.bowerDirectory + '/moment';
 
     var config = defaults(projectConfig, {
       momentPath: momentPath,
