@@ -8,12 +8,12 @@ ES6 accessible module for momentjs within your Ember applications.
 
 ## Usage
 
-* ember-cli < 0.2.3 `ember install:addon ember-cli-moment-shim`
-* ember-cli >= 0.2.3 `ember install ember-cli-moment-shim`
+* `ember install ember-cli-moment-shim`
 
 ```js
 import moment from 'moment';
 ```
+
 ## Upgrading
 
 Whenever an upgrading ember-cli-moment-shim, be sure to rerun the generator manually if not installed via `ember install`.  To do this, `ember g ember-cli-moment-shim`
